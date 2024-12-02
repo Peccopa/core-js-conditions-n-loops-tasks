@@ -144,6 +144,29 @@ function convertToRomanNumerals(num) {
  */
 function convertNumberToString(/* numberStr */) {
   throw new Error('Not implemented');
+  // const result = '';
+  // const obj = {
+  //   0: 'zero',
+  //   1: 'one',
+  //   2: 'two',
+  //   3: 'three',
+  //   4: 'four',
+  //   5: 'five',
+  //   6: 'six',
+  //   7: 'seven',
+  //   8: 'eight',
+  //   9: 'nine',
+  //   '.': 'point',
+  //   ',': 'point',
+  //   '-': 'minus',
+  // };
+  // let result = '';
+  // for (let i = 0; i < str.length; i += 1) {
+  //   // switch (numberStr[i]) {
+  //   // };
+  //   if (i < str.length - 1) result += ' ';
+  // }
+  // return result;
 }
 
 /**
@@ -158,8 +181,12 @@ function convertNumberToString(/* numberStr */) {
  *  '0123210'   => true
  *  'qweqwe'    => false
  */
-function isPalindrome(/* str */) {
-  throw new Error('Not implemented');
+function isPalindrome(str) {
+  let result = '';
+  for (let i = str.length - 1; i > -1; i -= 1) {
+    result += str[i];
+  }
+  return result === str;
 }
 
 /**
